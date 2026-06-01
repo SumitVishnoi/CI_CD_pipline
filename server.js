@@ -22,11 +22,17 @@ const app = express()
 app.use(morgan("dev"))
 app.use(express.json())
 
-app.get("/", (req, res)=> {
+app.get("/sum", (req, res)=> {
     const a = 20;
     const b = 30;
     const total = sum(a, b)
     res.status(200).json(total)
+})
+
+app.get("/", (req, res)=> {
+    res.status(200).json({
+        status:"OK"
+    })
 })
 
 connectDb()
