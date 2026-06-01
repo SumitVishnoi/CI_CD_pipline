@@ -29,6 +29,6 @@ jobs:
 
       - name: Deploy to Render
         run: |
-          curl -X POST "https://api.render.com/deploy/srv-d88t228jo6nc73d9s7q0?key=WCL_ErkeGMA"
+          curl -X POST "https://api.render.com/deploy/srv-d8em48mk1jcs73a4ec4g?key=W2QHWmcFD1Q"
 
           
